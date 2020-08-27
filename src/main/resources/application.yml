@@ -1,0 +1,18 @@
+
+spring:
+  servlet:
+    multipart:
+      #设置单个文件大小
+      max-file-size: 50MB
+      #设置单次请求文件的总大小
+      max-request-size: 50MB
+# 七牛云配置 上传凭证AccessKey，SecretKey和Bucket
+qiniu:
+  qiniuAccessKey:
+  qiniuSecretKey:
+  #图片尺寸，单位M
+  imageSize: 5
+  #环境，dev：开发环境
+  env: dev
+  # 批处理上传图片限制张数,单位个
+  imageNum: 200
