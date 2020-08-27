@@ -104,7 +104,7 @@ public class UploadController {
 
             //-----------2.check image to classify fail,successs list-------------------
             List<File> fileList = new ArrayList<>();
-            fileList = FileUtils.getSubFiles(unzipPath, fileList);
+            FileUtils.getSubFiles(unzipPath, fileList);
 
 
             //符合条件的图片集合
